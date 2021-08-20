@@ -1,0 +1,5 @@
+#Constantes
+
+MAX = 100
+IVA = 21
+NOMBRE_SISTEMA = "PROGRAMACIÓN - CLASE 1"
