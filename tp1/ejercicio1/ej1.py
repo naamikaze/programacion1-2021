@@ -1,6 +1,6 @@
 #Ejercicio1
 
-def ej1():
+def mayor():
     switch = 0
     mayor = -10
     while switch != 3:
@@ -12,6 +12,14 @@ def ej1():
             mayor = -1 
             break
     print(f'El nro mayor es: {mayor}')
+    ...
 
-print(f'Aca arranco el putisimo codigo')
-ej1()
+
+def main():
+    print('TRABAJO PRACTICO NRO 1')
+    print('Ejercicio 1 - Ignacio Rodríguez')
+    mayor()
+    ...
+
+if __name__ == '__main__':
+    main()
