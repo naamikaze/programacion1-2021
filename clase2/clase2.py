@@ -22,5 +22,16 @@ print("hola mundo".replace("mundo","/"""))
 print("hola mundo".replace("mundo","//")) 
 
 print("Nombre: {0}".format(persona[0]))
+
+print(texto[0])
 #ES LO MISMO QUE PONER PRINT(F'NOMBRE: {PERSONA[0]}')
 
+print(texto)
+vocales = 'a', 'e', 'i', 'o', 'u'
+for i in range (0,len(texto)):
+    if texto[i] in vocales:
+        print(texto[i], end='')
+
+
+for letra in texto:
+    print(letra + '|', end='')
