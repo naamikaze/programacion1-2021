@@ -15,6 +15,7 @@ def ordenar_vector(vector):
     print(vector)
     ...
 
+
 #Busqueda binaria (SOLO SIRVE EN VECTORES ORDENADOS) 
 def busqueda_binaria(valorBuscado, vector):
     inicio = 0
