@@ -60,7 +60,7 @@ def es_vocal(letra):
 
 def contar_vocales(texto):
 
-    if len(texto) == 0:
+    if len(texto) == 0: #Si el texto no tiene nada escrito levanta la excepcion de que no hay nada
         raise ErrorCadenaVacia
 
     cantidad= 0
