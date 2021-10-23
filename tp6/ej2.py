@@ -38,10 +38,10 @@ def lluvia():
 
 
 
-def mostrar_dias(lista):
+def escribir_dias(lista):
     with open('archivo.csv', 'w', encoding='utf-8') as arch:
         for dias in lista:
-            arch.write(f'{dias.dia}, {dias.mes}, {dias.lluvia_caida}')
+            arch.write(f'{dias.dia} , {dias.mes} , {dias.lluvia_caida}\n')
     print(f'Todo listo')
 
 
@@ -57,16 +57,17 @@ def leer_dias():
                     )
             lista.append(diass)
 
+    total_generado = 0
     for dias in lista:
-
         print(f'Dia: {dias.dia} Mes: {dias.mes} Generado: {dias.lluvia_caida}')
+
 
 
 def main():
     lista = lluvia()
-    leer_dia = mostrar_dias(lista)
+    escribir_dia = escribir_dias(lista)
     mostrar = leer_dias()
-    print(mostrar)
+    print('')
     ...
 
 if __name__ == '__main__':
