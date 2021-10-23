@@ -7,10 +7,12 @@ def main_leer():
 
 
 def main_borrar(lista):
-    for x in range(len(lista)):
-        lista[x].replace("#", "")
-    print(lista)
-    return lista
+    lista1 = []
+    for linea in lista:
+        reemplazar = linea.replace('#', '')
+        lista1.append(reemplazar)
+    print(lista1)
+    return lista1 
 
 def main_ingresar(lista):
     with open('archivo.py', 'w', encoding='utf-8') as archivo:
@@ -20,15 +22,6 @@ def main_ingresar(lista):
 
 
 def main():
-    print('Un ALGORITMO HECHO POR EL MEJOR')
-
-    for x in range(3):
-        print('IGNACIO RODRIGUEZ')
-
-    print()
-    print('COMENZEMOS B)')
-    print()
-
     lista = main_leer()
     borrada = main_borrar(lista)
     main_ingresar(borrada)
