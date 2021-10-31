@@ -8,6 +8,7 @@ class Afiliadoss:
 
 def leer_lista():
     lista = []
+
     with open('obrasocial.csv', 'r', encoding='utf-8') as arch:
 
         for afiliado in arch:
@@ -15,7 +16,6 @@ def leer_lista():
             afiliad = Afiliadoss(float(campos[0]),float(campos[1]), '0')
             lista.append(afiliad)
     return lista
-
 
 def generar_importe(lista):
     nuevalist=[]
